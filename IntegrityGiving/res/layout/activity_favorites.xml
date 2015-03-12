@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_landing_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/text_favorites"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_title"
+        android:background="@color/color_separator" />
+
+    <LinearLayout
+        android:id="@+id/linear_view_redeemed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_landing_bg" >
+
+        <LinearLayout
+            android:id="@+id/layout_view_redeemed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_round_border_green"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_redeemed"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_view_redeemed"
+        android:layout_below="@id/separator"
+        android:background="@color/color_white" >
+    </ListView>
+
+</RelativeLayout>

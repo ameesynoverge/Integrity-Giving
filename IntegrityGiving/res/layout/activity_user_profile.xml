@@ -1,0 +1,243 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_landing_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_offer_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/text_venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_main_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_venue_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_address"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_offer_detail"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_title_bg"
+            android:padding="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_offer_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/image_user"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".40"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/layout_offer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:background="@color/color_offer_detail_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/text_offer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_offer_valid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_offer_image"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/text_cashier_instructions"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_the_offer_only"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_offer_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:background="@color/color_black_light"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_redeem_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/text_redeem_time"
+                        android:text="Redeemed:"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/text_current_time"
+                        android:text="Current time:"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_casier_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_yellow" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/color_green"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="@string/text_casier_confirmation"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

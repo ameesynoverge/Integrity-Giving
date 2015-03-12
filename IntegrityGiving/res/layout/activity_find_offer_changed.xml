@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ig_logo_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_green"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:hint="Search by business name..."
+            android:imeOptions="actionDone"
+            android:nextFocusLeft="@id/edit_search"
+            android:nextFocusUp="@id/edit_search"
+            android:singleLine="true"
+            android:textColor="@color/color_main_text"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:spinnerMode="dialog"
+            android:textColor="@color/color_main_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_find_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_border_green"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Offers!"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_find_offers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/text_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="List Results"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Map Results"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_attributes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_toggle"
+        android:layout_below="@id/layout_search"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white"
+        android:divider="@color/color_brown_divider"
+        android:dividerHeight="1dp"
+        android:padding="10dp" >
+    </ListView>
+
+</RelativeLayout>

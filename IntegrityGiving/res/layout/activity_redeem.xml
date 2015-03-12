@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_landing_bg"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/layout_offer_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/text_venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/color_main_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_venue_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_address"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_offer_detail"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_title_bg"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_offer_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/image_offer"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".40"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/layout_offer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:background="@color/color_offer_detail_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/text_offer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_offer_valid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_offer_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_offer_image"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_promotion_losts"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_redeem_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_round_border_green"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_redeem_now"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_donate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_redeem_now"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_round_border_orange"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/text_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_delete_and_create"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_add_favorites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_donate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_round_border_favorites"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/text_add_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/favorites_green"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/text_add_favorites"
+                android:textColor="@color/color_green"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

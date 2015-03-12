@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_landing_bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_landing_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_large" />
+
+        <TextView
+            android:id="@+id/text_thank_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_thank_you_msg"
+            android:textColor="@color/color_welcome_text" />
+
+        <TextView
+            android:id="@+id/text_start_redeeming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/text_start_redeeming"
+            android:textColor="@color/color_welcome_text" />
+
+        <LinearLayout
+            android:id="@+id/layout_donate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_round_border_orange"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_delete_and_create"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/text_if_you_already"
+            android:textColor="@color/color_main_text" />
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:hint="@string/text_email_address"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:nextFocusLeft="@id/edit_user_name"
+            android:nextFocusUp="@id/edit_user_name"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:hint="@string/text_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:nextFocusLeft="@id/edit_password"
+            android:nextFocusUp="@id/edit_password"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round_border_green"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_round_border_continue"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/text_continue_preview"
+            android:textColor="@color/color_orange" />
+    </LinearLayout>
+
+</ScrollView>

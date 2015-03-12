@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/text_to_continue_using"
+        android:textColor="@color/color_main_text"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="@string/text_enter_email"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:id="@+id/layout_continue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_border_blue"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_continue"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

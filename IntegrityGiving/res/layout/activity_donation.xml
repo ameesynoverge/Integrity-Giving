@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_landing_bg"
+    android:paddingBottom="10dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_offer_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/text_venue_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_venue_name"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/text_phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_address"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_offer_detail"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_title_bg"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/layout_offer_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <ImageView
+                        android:id="@+id/image_offer"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".40"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_offer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".60"
+                        android:background="@color/color_offer_detail_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/text_offer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/color_main_text"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/color_main_text"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_offer_valid_till"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/color_main_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_thank_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_offer_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_thank_you"
+                    android:textColor="@color/color_thank_you"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_this_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_thank_you"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_this_offer"
+                    android:textColor="@color/color_main_text"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_this_offer"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_main_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_would_you_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_would_you_like"
+                android:textColor="@color/color_main_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_your_donation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_your_donation"
+                android:textColor="@color/color_main_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_org_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/text_donate_one_dollor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_border_green"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_donate_one_dollor"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_donate_two_dollor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_border_green"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_donate_two_dollor"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_donate_three_dollor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_border_green"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_donate_three_dollor"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_no_thank_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_round_border_white"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/text_no_thank_you"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

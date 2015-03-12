@@ -1,0 +1,23 @@
+<resources>
+
+    <color name="color_landing_bg">#ECECFB</color>
+    <color name="color_green">#339933</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_brawn">#A05000</color>
+    <color name="color_orange">#D96D00</color>
+    <color name="color_title_bg">#E5E2C0</color>
+    <color name="color_blue">#0066FF</color>
+    <color name="color_black_light">#383838</color>
+    <color name="color_main_text">#333333</color>
+    <color name="color_welcome_text">#8C2200</color>
+    <color name="color_thank_you">#8C2200</color>
+    <color name="color_gray">#D3D3D3</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_offer_detail_bg">#F8D696</color>
+    <color name="color_separator">#CCCCCC</color>
+    <color name="color_brown_divider">#686868</color>
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_ig_logo_bg">#E5E2C0</color>
+
+</resources>
